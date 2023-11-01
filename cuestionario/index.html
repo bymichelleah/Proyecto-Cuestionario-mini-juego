@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Test uu</title>
+</head>
+<body>
+    <header>
+        <h1>JUEGO DE PREGUNTAS</h1>
+        <p>¡Bienvenido(a)! Consiste en que debes de responder todas las preguntas 
+            es decir las 10 preguntas, espero que te guste
+            disfrutalo, es un reto contra ti mismo dale tú 
+            puedes a ver como te va ¡Suerte!
+        </p>
+    </header>
+    <div class="container">
+        <section id="p0">
+            <h3>1 - ¿Cuál es la capital de Francia?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> Paris
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> Lima
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> Buenos Aires
+            </label>
+        </section>
+
+        <section id="p1">
+            <h3>2 - ¿Cuántos días tiene una semana?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> 5 días
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> 6 días
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> 7 días
+            </label>
+        </section>
+
+        <section id="p2">
+            <h3>3 - ¿Quién escribió La Odisea?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> Aristoteles
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> Homero
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> Platon
+            </label>
+        </section>
+
+        <section id="p3">
+            <h3>4 - ¿Cuál es el país mas poblado?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> China
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> India
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> Rusia
+            </label>
+        </section>
+
+        <section id="p4">
+            <h3>5 - ¿Quién pintó “la última cena?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> Pablo Picasso
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> Van Gogh
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> Leonardo da Vinci
+            </label>
+        </section>
+
+        <section id="p5">
+            <h3>6 - ¿Cuántas patas tiene la araña?</h3>
+            <label>
+                <input type="radio" value="1" name="p5" onclick="respuesta(5,this)"> 8 patas
+            </label>
+            <label>
+                <input type="radio" value="2" name="p5" onclick="respuesta(5,this)"> 6 patas
+            </label>
+            <label>
+                <input type="radio" value="3" name="p5" onclick="respuesta(5,this)"> 4 patas
+            </label>
+        </section>
+
+        <section id="p6">
+            <h3>7 - ¿Cuánto vale el número pi?</h3>
+            <label>
+                <input type="radio" value="1" name="p6" onclick="respuesta(6,this)"> 3,12...
+            </label>
+            <label>
+                <input type="radio" value="2" name="p6" onclick="respuesta(6,this)"> 3,14...
+            </label>
+            <label>
+                <input type="radio" value="3" name="p6" onclick="respuesta(6,this)"> 3,16...
+            </label>
+        </section>
+
+        <section id="p7">
+            <h3>8 - El triángulo que tiene sus tres lados iguales ¿Cómo se llama?</h3>
+            <label>
+                <input type="radio" value="1" name="p7" onclick="respuesta(7,this)"> Isósceles
+            </label>
+            <label>
+                <input type="radio" value="2" name="p7" onclick="respuesta(7,this)"> Escaleno
+            </label>
+            <label>
+                <input type="radio" value="3" name="p7" onclick="respuesta(7,this)"> Equilátero
+            </label>
+        </section>
+
+        <section id="p8">
+            <h3>9 - ¿Cuántos corazones tienen los pulpos?</h3>
+            <label>
+                <input type="radio" value="1" name="p8" onclick="respuesta(8,this)"> 3 corazones
+            </label>
+            <label>
+                <input type="radio" value="2" name="p8" onclick="respuesta(8,this)"> 2 corazones
+            </label>
+            <label>
+                <input type="radio" value="3" name="p8" onclick="respuesta(8,this)"> 1 corazon
+            </label>
+        </section>
+
+        <section id="p9">
+            <h3>10 - ¿Cuántos fueron los discípulos de Jesús?</h3>
+            <label>
+                <input type="radio" value="1" name="p9" onclick="respuesta(9,this)"> 13 discípulos
+            </label>
+            <label>
+                <input type="radio" value="2" name="p9" onclick="respuesta(9,this)"> 11 discípulos
+            </label>
+            <label>
+                <input type="radio" value="3" name="p9" onclick="respuesta(9,this)"> 12 discípulos
+            </label>
+        </section>
+
+
+        <button onclick="corregir()">CORREGIR</button>
+        <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+    </div>
+    <script src="js/script.js"> </script>
+</body>
+</html>
